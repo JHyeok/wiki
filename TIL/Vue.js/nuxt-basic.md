@@ -1,6 +1,19 @@
 # Nuxt.js 기본
 
+Nuxt는 Vue.js로 빠르게 웹을 제작할 수 있게 도와주는 프레임워크이다.
+웹 애플리케이션을 제작할 때 필요한 뷰엑스, 라우터, Axios와 같은 라이브러리들을 미리 구성하여 싱글 페이지 애플리케이션(Single Page Application), 서버 사이드 렌더링(Server Side Rendering), 정적 웹 사이트(Static Generated Website)를 쉽게 제작할 수 있게 한다.
+
+Nuxt 특징
+- pages 폴더 기반의 자동 라우팅 설정
+- 코드 스플리팅
+- 서버 사이드 렌더링
+- 비동기 데이터 요청 속성
+- ES6/ES6+ 변환
+- 웹팩을 비롯한 기타 설정
+
+```
 npx create-nuxt-app <projectName>
+```
 
 package manager는 Npm\
 UI freamework는 Bootstrap Vue\
@@ -22,4 +35,7 @@ Store - Nuxt.js와 Vuex를 함께 사용하려는 경우.
 pages에 users폴더를 만들어서 `/users`를 하려고 했는데 페이지를 찾을 수 없다고 오류가 떴다.\
 nodemon을 `restart(command: rs)`하거나, 다시 `npm run dev`를 하면 된다.
 
+---
+#### 참고
 
+https://nuxtjs.org/guide
