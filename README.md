@@ -8,6 +8,7 @@
  - [Integerous 님의 TIL](https://github.com/Integerous/TIL)
 
 ### 목차
+- [Daily](https://github.com/JHyeok/TIL/tree/master/TIL/Daily)
 - [ASP.NET Core](#aspnetcore)
 - [ASP.NET Core MVC 시리즈](#aspnetcoremvc)
 - [ASP.NET MVC5](#aspnetmvc5)
