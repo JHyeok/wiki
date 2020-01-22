@@ -1,6 +1,7 @@
 # Today I Learned
  1. 개발자는 꾸준히 공부해야 한다.
  2. 공부하면서 배운점들과 자료들을 기록한다.
+ 3. 오류 해결 내용들도 Daily에 기록한다. (검색해서 찾기에 용이하다)
 
 ### 참고한 TIL
  - [thoughtbot 의 TIL](https://github.com/thoughtbot/til)
