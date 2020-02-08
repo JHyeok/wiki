@@ -172,6 +172,8 @@
 - [클러스터링 인덱스](https://github.com/JHyeok/TIL/blob/master/TIL/Database/clustered-index.md)
 - [Connection Pool](https://github.com/JHyeok/TIL/blob/master/TIL/Database/connection-pool.md)
 - [DataBase별 데이터 선언 차이](https://github.com/JHyeok/TIL/blob/master/TIL/Database/database-varchar.md)
+- [MySQL Slow Query 설정](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-slow-query.md)
+
 
 <div id="npm" />
 
