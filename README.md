@@ -173,6 +173,7 @@
 - [Connection Pool](https://github.com/JHyeok/TIL/blob/master/TIL/Database/connection-pool.md)
 - [DataBase별 데이터 선언 차이](https://github.com/JHyeok/TIL/blob/master/TIL/Database/database-varchar.md)
 - [MySQL Slow Query 설정](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-slow-query.md)
+- [MySQL 튜닝](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-mycnf.md)
 
 
 <div id="npm" />
