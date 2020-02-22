@@ -19,3 +19,30 @@ Fiddler - Free Web Debugging Proxy
 WebSurge – Free Performance Testing Tool
 
 nGrinder - 부하 테스트
+
+## > Visual Studio Code 환경
+
+`settings.json`
+
+```
+{
+    "files.watcherExclude": {
+        "**/node_modules": true,
+        "**/platforms": true,
+        "**/plugins": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "[vue]": {},
+    "powermode.enabled": true,
+    "powermode.shakeIntensity": 1,
+    "powermode.explosionSize": 14,
+    "powermode.enableShake": false,
+    "explorer.confirmDelete": false,
+    "editor.tabSize": 2,
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}
+```
