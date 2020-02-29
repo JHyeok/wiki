@@ -26,7 +26,6 @@
 - [Design Pattern](#designpattern)
 - [Git](#git)
 - [AWS](#aws)
-- [NPM](#npm)
 - [Database](#database)
 - [HTML](#html)
 - [Java](#java)
@@ -106,6 +105,7 @@
 ### `Node.js`
 
 - [Javascript에서 TimeZone에 따른 시간 출력](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/js-locale-string.md)
+- [npm update](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/npm-package.md)
 
 <div id="react" />
 
@@ -175,13 +175,6 @@
 - [DataBase별 데이터 선언 차이](https://github.com/JHyeok/TIL/blob/master/TIL/Database/database-varchar.md)
 - [MySQL Slow Query 설정](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-slow-query.md)
 - [MySQL 튜닝](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-mycnf.md)
-
-
-<div id="npm" />
-
-### `NPM`
-
-- [npm update](https://github.com/JHyeok/TIL/blob/master/TIL/NPM/update.md)
 
 <div id="html" />
 
