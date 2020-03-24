@@ -158,6 +158,7 @@
 - [Git 원격 저장소 URL 변경](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-remote-url-edit.md)
 - [git 커밋 메세지 취소 및 푸시 취소](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-commit-push-cancel.md)
 - [Git Commit Log 확인](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-commit-log.md)
+- [Git 작업 중 블루스크린으로 Git 손상 대처 방법](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-bluescreen.md)
 
 <div id="aws" />
 
