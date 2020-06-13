@@ -35,18 +35,16 @@
 
 ### `ASP.NET Core`
 
-- [의존성주입과 제어의 반전](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/DI-and-IOC.md)
-- [Enterprise Architecture](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/enterprise-architecture.md)
 - [ASP.NET Core Identity](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/Identity.md)
 - [.NET Core 성능](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/net-core-performance.md)
 - [Visual Studio Code 풀스택 개발하기](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/vscode-fullstack-dotent.md)
-- [Etc](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/Etc.md)
 - [SignalR](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/SignalR.md)
 - [.NET Core InProcess와 OutOfProcess](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/deploy.md)
 
 <div id="aspnetcoremvc" />
 
 #### `ASP.NET Core MVC 시리즈`
+
 - [ASP.NET Core 클레임 기반 로그인 구현](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/claims-login.md)
 - [ASP.NET Core 다국어(세계화 및 지역화)](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/localizer.md)
 - [ASP.NET Core NLog, Sentry 적용](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/nlog-sentry.md)
