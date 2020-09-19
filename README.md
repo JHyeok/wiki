@@ -45,7 +45,6 @@
 ### `Entity Framework`
 
 - [Entity FrameWork 대량 Insert/Update](https://github.com/JHyeok/TIL/blob/master/TIL/Entity%20Framework/bulk-insert-update.md)
-- [CodeFirst](https://github.com/JHyeok/TIL/blob/master/TIL/Entity%20Framework/CodeFirst.md)
 - [SingleOrDefault 와 FirstOrDefault 의 차이](https://github.com/JHyeok/TIL/blob/master/TIL/Entity%20Framework/single-and-first.md)
 - [CodeFirst 비활성화](https://github.com/JHyeok/TIL/blob/master/TIL/Entity%20Framework/disable-codefirst.md)
 
@@ -55,7 +54,7 @@
 
 ### `Kafka`
 
-- [카프카 기초](https://github.com/JHyeok/TIL/blob/master/TIL/Kafka/Basic.md)
+- [카프카 기초](https://github.com/JHyeok/TIL/blob/master/TIL/Kafka/kafka.md)
 
 ### `ELK`
 
