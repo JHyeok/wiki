@@ -1,5 +1,4 @@
-#### Kibana
-- 시각화, 스택 관리 도구
+# Elasticsearch와 Kibana
 
 #### Elasticsearch
 - 데이터 저장, 검색 및 분석
@@ -17,6 +16,9 @@
 | 의미 검색 | 불가능 | 가능 |
 | Join | 가능 | 불가능 |
 | 수정 / 삭제 | 빠름 | 느림 |
+
+#### Kibana
+- 시각화, 스택 관리 도구
 
 #### Beats, Logstash
 - 데이터 수집
