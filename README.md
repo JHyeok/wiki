@@ -68,7 +68,8 @@
 ### `Node.js`
 
 - [Javascript에서 TimeZone에 따른 시간 출력](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/js-locale-string.md)
-- [npm update](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/npm-package.md)
+- [NPM 모듈 관리 및 업데이트](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/npm-management-and-update.md)
+- [gulp.js란?](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/gupljs.md)
 
 ### `React`
 

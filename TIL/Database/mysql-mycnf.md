@@ -1,4 +1,4 @@
-#### MySQL 튜닝
+# MySQL 튜닝
 
 ```
 max_allowed_packet(서버로 질의하거나 받게되는 패킷의 최대 길이를 나타내는 시스템 변수) 
