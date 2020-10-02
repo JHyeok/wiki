@@ -1,4 +1,4 @@
-## > Visual Studio Code 환경
+# > Visual Studio Code 환경
 
 `settings.json`
 
@@ -25,9 +25,9 @@
 }
 ```
 
-## > 맥린이 맥북 적응하기
+# > 맥린이 맥북 적응하기
 
-#### 맥OS에서 NVM으로 Node 설치
+### 맥OS에서 NVM으로 Node 설치
 
 ```
 sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
@@ -38,7 +38,7 @@ nvm install v12
 - 참고 : https://gist.github.com/falsy/8aa42ae311a9adb50e2ca7d8702c9af1
 
 
-#### zsh에서 Node 명령어 오류가 발생할 때
+### zsh에서 Node 명령어 오류가 발생할 때
 
 ```
 vi .zshrc
@@ -49,25 +49,61 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 - 참고 : https://likejirak.tistory.com/m/224
 
+### 맥북 환경설정 순서
 
-#### 맥OS의 키보드와 마우스, 스크롤 환경 설정을 해야 한다.
-#### 키보드에서는 키 반복 빠르게, 지연시간 짧게 설정
-#### 맥OS에서 fn키 누르지 않고 F1 ~ F12 사용하도록 설정
-#### 단어 자동완성, 맞춤법 해제하기
+1. 맥OS의 키보드와 마우스, 스크롤 환경 설정을 해야 한다.
+2. 키보드에서는 키 반복 빠르게, 지연시간 짧게 설정
+3. 맥OS에서 fn키 누르지 않고 F1 ~ F12 사용하도록 설정
+4. 단어 자동완성, 맞춤법 해제하기
+5. 맥북 한영을 윈도우처럼 오른쪽 커맨드로 변경
+6. 터치패드 설정 변경
 
-#### 맥북 한영을 윈도우처럼 오른쪽 커맨드로 변경
-- 참고 : https://m.post.naver.com/viewer/postView.nhn?volumeNo=17887832&memberNo=724&searchKeyword=%EB%A7%A5&searchRank=7
+### Docker Compose - MySQL
 
-#### Docker에서 Redis 설치하고 자동 실행 설정
-
+```yml
+version: "3" # 파일 규격 버전
+services: # 이 항목 밑에 실행하려는 컨테이너 들을 정의
+  db: # 서비스 명
+    image: mysql:5.7 # 사용할 이미지
+    container_name: mysql # 컨테이너 이름 설정
+    ports:
+      - "3306:3306" # 접근 포트 설정 (컨테이너 외부:컨테이너 내부)
+    environment: # -e 옵션
+      MYSQL_ROOT_PASSWORD: "root1234"  # MYSQL 패스워드 설정 옵션
+    command: # 명령어 실행
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - /Users/{userName}/datadir:/var/lib/mysql # -v 옵션 (다렉토리 마운트 설정)
+    restart: always
 ```
-docker pull redis:alpine
-docker run —name myredis -d -p 6379:6379 redis:alpine
-```
-재부팅 시에 Docker의 컨테이너가 자동으로 시작되도록 설정하려면 `--restart=always` 옵션이 필요하다.
 
+> {userName} 에는 컴퓨터 사용자 이름이 들어간다.
+
+### Docker Compose - Redis
+
+```yml
+version: "3"
+services:
+  # Redis Server
+  redis:
+    image: redis:alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    entrypoint: redis-server --appendonly yes
+    restart: always
+  # Redis Web-UI
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: redis-commander
+    ports:
+      - "8081:8081"
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    volumes:
+      - /Users/{userName}/datadir:/var/lib/redis
+    restart: always
 ```
-docker update --restart=always <container-id>
-ex)
-docker update --restart=always 225a25d34ad9
-```
+
+> {userName} 에는 컴퓨터 사용자 이름이 들어간다.
