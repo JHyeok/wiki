@@ -1,29 +1,55 @@
 # > Visual Studio Code 환경
 
+### Visual Studio Code 확장 프로그램 관리
+
+```bash
+$ code --list-extensions | % { "code --install-extension $_" }
+```
+
+```
+code --install-extension 74th.monokai-charcoal-high-contrast
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension ms-azuretools.vscode-docker        
+code --install-extension MS-CEINTL.vscode-language-pack-ko  
+code --install-extension ms-python.python
+code --install-extension octref.vetur
+code --install-extension shd101wyy.markdown-preview-enhanced
+```
+
+### Visual Studio Code Settings
+
 `settings.json`
 
 ```
 {
-    "files.watcherExclude": {
-        "**/node_modules": true,
-        "**/platforms": true,
-        "**/plugins": true
-    },
-    "eslint.alwaysShowStatus": true,
-    "[vue]": {},
-    "powermode.enabled": true,
-    "powermode.shakeIntensity": 1,
-    "powermode.explosionSize": 14,
-    "powermode.enableShake": false,
-    "explorer.confirmDelete": false,
-    "editor.tabSize": 2,
-    "typescript.implementationsCodeLens.enabled": true,
-    "typescript.referencesCodeLens.enabled": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    }
+  "files.watcherExclude": {
+    "**/node_modules": true,
+    "**/platforms": true,
+    "**/plugins": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "[vue]": {},
+  "explorer.confirmDelete": false,
+  "editor.tabSize": 2,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.renderIndentGuides": true,
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "workbench.colorTheme": "monokai-charcoal (gray)"
 }
 ```
+
+> Windows 환경에서 `Ctrl + Shift + P` 단축키로 `settings.json` 수정 가능하다.
 
 # > 맥린이 맥북 적응하기
 
