@@ -7,7 +7,7 @@ $ code --list-extensions | % { "code --install-extension $_" }
 ```
 
 ```
-code --install-extension 74th.monokai-charcoal-high-contrast
+code --install-extension DataByne.theme-monokai-hc
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
@@ -45,7 +45,8 @@ code --install-extension shd101wyy.markdown-preview-enhanced
   "[typescript]": {
     "editor.formatOnSave": true
   },
-  "workbench.colorTheme": "monokai-charcoal (gray)"
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "workbench.colorTheme": "Monokai High Contrast"
 }
 ```
 
