@@ -45,7 +45,6 @@ code --install-extension shd101wyy.markdown-preview-enhanced
   "[typescript]": {
     "editor.formatOnSave": true
   },
-  "editor.fontFamily": "Consolas, 'Courier New', monospace",
   "workbench.colorTheme": "Monokai High Contrast"
 }
 ```
