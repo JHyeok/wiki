@@ -7,7 +7,6 @@ $ code --list-extensions | % { "code --install-extension $_" }
 ```
 
 ```
-code --install-extension DataByne.theme-monokai-hc
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
@@ -45,7 +44,6 @@ code --install-extension shd101wyy.markdown-preview-enhanced
   "[typescript]": {
     "editor.formatOnSave": true
   },
-  "workbench.colorTheme": "Monokai High Contrast"
 }
 ```
 
@@ -81,8 +79,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 2. 키보드에서는 키 반복 빠르게, 지연시간 짧게 설정
 3. 맥OS에서 fn키 누르지 않고 F1 ~ F12 사용하도록 설정
 4. 단어 자동완성, 맞춤법 해제하기
-5. 맥북 한영을 윈도우처럼 오른쪽 커맨드로 변경
+5. 맥북 한영을 윈도우처럼 오른쪽 커맨드로 변경 (Karabiner-Elements)
 6. 터치패드 설정 변경
+7. 맥 파인더 경로 막대 설정
 
 ### Docker Compose - MySQL
 
@@ -133,3 +132,13 @@ services:
 ```
 
 > {userName} 에는 컴퓨터 사용자 이름이 들어간다.
+
+# > DBeaver 설정
+
+### 키워드 대문자 자동 설정
+
+`Preferences > General > Editors > SQL Editor > SQL Formatting`에 들어가서 `Formatter`를 `Upper`로 설정한다.
+
+### 개발, QA, 운영 구분
+
+`Window > Preferences > Database > Connection Types`에서 여러 가지 설정이 가능하다.
