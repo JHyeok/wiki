@@ -3,7 +3,11 @@
 ### Visual Studio Code 확장 프로그램 관리
 
 ```bash
+# Windows (PowerShell)
 $ code --list-extensions | % { "code --install-extension $_" }
+
+# Unix 계열
+code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
 ```
@@ -133,12 +137,17 @@ services:
 
 > {userName} 에는 컴퓨터 사용자 이름이 들어간다.
 
-# > DBeaver 설정
+# > DBeaver 설정 (DBeaver 7.2.0)
 
 ### 키워드 대문자 자동 설정
 
-`Preferences > General > Editors > SQL Editor > SQL Formatting`에 들어가서 `Formatter`를 `Upper`로 설정한다.
+키워드 대소문자 변경은 `Preferences > DBeaver > SQL Editor settings`를 통해 들어가서 `SQL Formatting`을 선택해서 `Formatter`를 설정 가능하다. 기본값은 대문자로 되어있다.
 
 ### 개발, QA, 운영 구분
 
 `Window > Preferences > Database > Connection Types`에서 여러 가지 설정이 가능하다.
+좌측 내비게이터에서 연결된 DB를 오른쪽 클릭하고 `Edit Connection > General`에 들어가면 `Connection type`을 변경 가능하며, 옆에 `Edit connection types`에서 커스텀이 가능하다.
+
+
+
+
