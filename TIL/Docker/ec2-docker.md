@@ -81,6 +81,12 @@ docker volume prune
 
 볼륨을 제거하려면 컨테이너가 제거되어 있어야 한다.
 
+Docker를 사용하다 보면 `<none>:<none>`의 이미지들이 쌓이기 시작한다. 이러한 이미지들을 정리하려면 아래의 명령어를 입력하면 된다.
+
+```
+docker rmi $(docker images -f "dangling=true" -q)
+```
+
 3. 내가 자주 사용하는 docker-compose 명령어들
 
 ```
@@ -92,6 +98,9 @@ docker-compose up -d --build
 
 # 로그 확인
 docker-compose logs
+
+# docker-compose로 설치한 volume 삭제
+docker-compose down -v
 ```
 
 4. [도커에서 bcrypt 설치 오류 발생 해결 방법](https://www.richardkotze.com/top-tips/install-bcrypt-docker-image-exclude-host-node-modules)
