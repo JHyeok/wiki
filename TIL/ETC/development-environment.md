@@ -148,6 +148,14 @@ services:
 `Window > Preferences > Database > Connection Types`에서 여러 가지 설정이 가능하다.
 좌측 내비게이터에서 연결된 DB를 오른쪽 클릭하고 `Edit Connection > General`에 들어가면 `Connection type`을 변경 가능하며, 옆에 `Edit connection types`에서 커스텀이 가능하다.
 
+### 기타
 
+DBeaver를 사용하려면 JDK가 필요한데, 최신 버전 설치하는게 좋아보인다.
+
+맥 OS 업데이트 이후에 기존에 사용하던 DBeaver가 열리지 않았는데, DBeaver GitHub Issuse에서는 JDK를 최신 버전으로 업데이트 하면 된다고 해서 업데이트하니 정상적으로 열렸다.
+
+```bash
+brew cask install adoptopenjdk15
+```
 
 
