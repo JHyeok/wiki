@@ -12,7 +12,19 @@ origin  https://github.com/JHyeok/organize-note.git (push)
 
 로 원격 저장소의 URL을 변경할 수 있다.
 
+# GitHub Fork한 Repository 최신 버전으로 동기화
+
+```bash
+git remote add upstream https://github.com/JHyeok/README.git
+git fetch upstream
+git merge upstream/master
+```
+
+`upstream` 등록한 것은 `git remote -v`로 확인할 수 있으며, 혹시 잘못 등록되어있다면 `git remote remove upstream`로 삭제할 수 있다.
+
 ---
 #### 참고
 
 https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EC%A0%80%EC%9E%A5%EC%86%8C
+
+https://jybaek.tistory.com/775
