@@ -4,13 +4,14 @@
 
 ```bash
 # Windows (PowerShell)
-$ code --list-extensions | % { "code --install-extension $_" }
+code --list-extensions | % { "code --install-extension $_" }
 
 # Unix 계열
 code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
 ```
+code --install-extension azemoh.one-monokai
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
@@ -19,6 +20,7 @@ code --install-extension MS-CEINTL.vscode-language-pack-ko
 code --install-extension ms-python.python
 code --install-extension octref.vetur
 code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension tht13.python
 ```
 
 ### Visual Studio Code Settings
@@ -48,6 +50,7 @@ code --install-extension shd101wyy.markdown-preview-enhanced
   "[typescript]": {
     "editor.formatOnSave": true
   },
+  "workbench.colorTheme": "One Monokai"
 }
 ```
 
