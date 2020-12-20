@@ -150,3 +150,4 @@
 - [나의 개발 환경](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/development-environment.md)
 - [CentOS7 자주 사용하는 Command 추가](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/centos-command.md)
 - [gRPC](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/grpc.md)
+- [nGrinder 환경 AWS에서 구성](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/ngrinder-aws.md)
