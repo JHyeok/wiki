@@ -45,6 +45,7 @@ code --install-extension tht13.python
   },
   "editor.renderIndentGuides": true,
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "terminal.integrated.fontFamily": "'D2Coding ligature'",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
