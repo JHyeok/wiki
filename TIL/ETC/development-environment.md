@@ -141,6 +141,28 @@ services:
 
 > {userName} 에는 컴퓨터 사용자 이름이 들어간다.
 
+### Docker Compose - MongoDB
+
+```yml
+version: "3"
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - /Users/{userName}/mongodb/data:/data/db
+    ports:
+      - "27017:27017"
+    restart: always
+
+# connect URL : mongodb://root:password@localhost:27017
+```
+
+> {userName} 에는 컴퓨터 사용자 이름이 들어간다.
+
 # > DBeaver 설정 (DBeaver 7.2.0)
 
 ### 키워드 대문자 자동 설정
