@@ -91,6 +91,17 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 6. 터치패드 설정 변경
 7. 맥 파인더 경로 막대 설정
 
+#### 맥북 키 반복 입력으로 대체하기
+
+기존에는 영어 키를 꾹 누르고 있으면 액센트 표시가 있는 문자 입력인데, 이것을 Windows 환경에서 처럼 키 반복 입력으로 변경 가능하다. 설정한 이후에 해당 응용프로그램만 재시작하면 적용된다.
+
+```
+# 키 반복 입력
+defaults write -g ApplePressAndHoldEnabled -bool false
+# 기존의 액센트 표시가 있는 문자 입력
+defaults delete -g ApplePressAndHoldEnabled
+```
+
 ### Docker Compose - MySQL
 
 ```yml
