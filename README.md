@@ -145,6 +145,7 @@
 
 ### `ETC`
 
+- [Getting Real - 보다 작고, 빠르고, 좋은 소프트웨어 구축을 위한 방법](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/getting-real.md)
 - [올바른 저장 프로시저의 사용법](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/why-use-stored-prodecure.md)
 - [Visual Studio Code 플러그인 Tip](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/vscode-tip.md)
 - [Slack 사용 간단 정리](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/slack-get-started.md)
@@ -152,3 +153,5 @@
 - [CentOS7 자주 사용하는 Command 추가](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/centos-command.md)
 - [gRPC](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/grpc.md)
 - [nGrinder 환경 AWS에서 구성](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/ngrinder-aws.md)
+- [리눅스 권한 조정](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/linux-chmod.md)
+- [간단하게 병렬로 API 요청 보내는 방법](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/postman-curl-test.md)
