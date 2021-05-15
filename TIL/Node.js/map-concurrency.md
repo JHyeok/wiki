@@ -1,4 +1,4 @@
-#### map/forEach 에서 async/await를 병렬로 사용
+# map/forEach 에서 async/await를 병렬로 사용
 
 먼저, for..of는 iterable 객체를 모두 순회할 수 있는 반복문이다.
 for..in은 Object의 Key를 순회하기 위한 반복문이다. forEach를 Array를 순회하는데 사용된다.
