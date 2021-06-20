@@ -68,7 +68,7 @@
 ### `Node.js`
 
 - [Javascript에서 TimeZone에 따른 시간 출력](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/js-locale-string.md)
-- [NPM 모듈 관리 및 업데이트](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/npm-management-and-update.md)
+- [Node.js 패키지 관리](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/package-management.md)
 - [gulp.js란?](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/gupljs.md)
 - [개발환경에서 간단하게 부하 테스트 하는 방법](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/simple-load-test.md)
 - [Redis를 단위 테스트에서 사용(Mocha, Sinon)](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/mocha-redis.md)

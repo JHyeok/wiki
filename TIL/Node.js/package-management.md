@@ -1,4 +1,8 @@
-# NPM 모듈 관리 및 업데이트
+# Node.js 패키지 관리
+
+Node.js의 패키지 관리에 주로 사용하는 두 가지는 [NPM](https://www.npmjs.com/)(Node Package Manager)과 [Yarn](https://classic.yarnpkg.com/en/)이다.
+
+## NPM으로 패키지 관리
 
 npm update를 입력하면 설치된 의존성 모듈들을 전부 업데이트한다.
 
@@ -22,7 +26,7 @@ npm 버전들을 관리할 수 있다.
 
 즉, npm update를 실행하면 설치되는 버전이다. "Latest"는 모듈의 최신 버전이다. 위 화면에서는 "Wanted"와 "Latest"가 같은 모듈이 빨간색으로 표시되었고 "Latest"가 "Wanted"보다 높은 모듈은 구별할 수 있게 노란색으로 표시되었다.
 
-# Major 버전 업데이트
+## NPM으로 Major 버전 업데이트
 
 기존의 `npm update` 명령어로는 `^`에 표기된 Minor 버전들까지로만 업데이트 된다.
 
@@ -40,7 +44,7 @@ npm-check-updates를 사용해서 Major 버전들도 모두 업데이트 된다.
 npm install
 ```
 
-# Yarn으로 패키지 관리
+## Yarn으로 패키지 관리
 
 yarn outdated 로 어떤 패키지를 업데이트해야 하는지 확인한 이후에,
 
