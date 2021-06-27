@@ -11,7 +11,6 @@ code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
 ```
-code --install-extension trinm1709.dracula-theme-from-intellij
 code --install-extension leizongmin.node-module-intellisense
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
@@ -52,6 +51,7 @@ code --install-extension tht13.python
   "[typescript]": {
     "editor.formatOnSave": true
   },
+  "editor.renderWhitespace": "boundary"
 }
 ```
 
