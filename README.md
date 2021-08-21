@@ -133,6 +133,8 @@
 - [MySQL Slow Query 설정](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-slow-query.md)
 - [MySQL 튜닝](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-mycnf.md)
 - [DBeaver에서 DB Dump 하고 Docker MySQL DB에 Restore](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-dump-restore.md)
+- [SELECT FOR UPDATE](https://github.com/JHyeok/TIL/blob/master/TIL/Database/select-for-update.md)
+- [MongoDB의 lookup vs Mongoose의 populate](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mongodb-lookup-mongoose-populate.md)
 
 ### `HTML`
 
