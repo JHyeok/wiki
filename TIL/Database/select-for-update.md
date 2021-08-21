@@ -26,7 +26,7 @@ SELECT * FROM article WHERE id=1 FOR UPDATE;
 SELECT FOR UPDATE를 사용하지 않고, Redis를 앞단에 두어서 동시 요청을 막을 수도 있다.
 
 #### 그림 설명
-https://dololak.tistory.com/446 
+https://dololak.tistory.com/446
 
 ---
 #### 참고
