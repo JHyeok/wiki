@@ -22,17 +22,72 @@ Mongoose populate()
 
 ![lookup-populate](./image/lookup-populate.png)
 
-$lookup이 populate()보다 성능이 더 좋은 경우는 도큐먼트 조인 수 <20을 처리 할 때이다. 따라서 findOne 또는 limit(<20)을 사용하는 경우 $lookup을 사용하는 것이 더 성능이 좋다. 그렇지만 findOne을 사용하는 조회에서 $lookup이 두 배 빠르지만 실세 시간의 차이는 미미하다.(0.5ms 대 1.5ms).
+$lookup이 populate()보다 성능이 더 좋은 경우는 도큐먼트 조인 수 <20을 처리 할 때이다. 따라서 findOne 또는 limit(<20)을 사용하는 경우 $lookup을 사용하는 것이 더 성능이 좋다. 그렇지만 findOne을 사용하는 조회에서 $lookup이 두 배 빠르지만 실제 시간의 차이는 미미하다.(0.5ms 대 1.5ms).
 
-MongoDB는 쿼리시 필요한 모든 정보가 도큐먼트에 있을 때가 가장 성능이 좋다. 
+MongoDB는 쿼리시 필요한 모든 정보가 도큐먼트에 있을 때가 가장 성능이 좋다. foreignField에 인덱스가 설정되어 있는지 확인한다. 그리고 올바른 상황(100개 미만)에서 $lookup, populate 사용은 끔찍하지 않다.
+
+$lookup은 MongoDB에서만 처리가 되는데, pupulate는 아래처럼 MongoDB에서 조회를 하고 그 조회된 값을 JS단에서 처리해준다.
+
+*NoSql Queries*
+```
+Mongoose: orders.find({}, { projection: {} })
+Mongoose: users.find({ _id: { '$in': [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ... 60000 more items ] }}, { projection: {} })
+```
+*Javascript*
+```javascript
+const orders = await Order.find();
+const users = await User.find({ _id: { $in: orders.map(f => f.user) } })
+const userMap = users.reduce((map, b) => map.set(b._id.toString(), b), new Map())
+for (const order of orders) {
+  order.user = userMap.get(order.user.toString())
+}
+```
+
+lookup, populate 예제 (Mongoose의 aggregate에서 lean옵션 없어도 됨)
+
+```typescript
+return OrderModel.aggregate([
+  {
+    $match: {
+      status: true,
+      isDeleted: false,
+    },
+  },
+  {
+    $lookup: {
+      from: 'users',
+      localField: 'user',
+      foreignField: '_id',
+      as: 'user',
+    },
+  },
+]).exec();
+```
+
+```typescript
+return OrderModel.find(
+  {
+    status: true,
+    isDeleted: false,
+  },
+  '',
+)
+  .populate({
+    path: 'user',
+    select: ['name', 'email'],
+    model: UserModel,
+    match: { isDeleated: false },
+  })
+  .lean();
+```
 
 ---
 #### 참고
+
+https://medium.com/cameoeng/mongodb-lookups-and-populates-an-unexpected-journey-940e08e36a94
 
 https://mongoosejs.com/docs/populate.html
 
 https://www.zerocho.com/category/MongoDB/post/59a66f8372262500184b5363
 
 https://stackoverflow.com/questions/55575806/mongoose-populate-vs-aggregate
-
-https://medium.com/cameoeng/mongodb-lookups-and-populates-an-unexpected-journey-940e08e36a94
