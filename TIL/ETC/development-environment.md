@@ -73,13 +73,37 @@ nvm install v12
 ### zsh에서 Node 명령어 오류가 발생할 때
 
 ```
-vi .zshrc
+vi ~/.zshrc
+```
 
+```
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
 - 참고 : https://likejirak.tistory.com/m/224
+
+### 프로젝트 별로 노드 버전 변경하기 (zsh + .nvmrc)
+
+```
+vi ~/.zshrc
+```
+
+```
+# Load nvmrc
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+```
+
+- 참고 : https://hyeok999.github.io/2020/06/02/NVM/
 
 ### 맥북 환경설정 순서
 
@@ -174,6 +198,33 @@ services:
 
 > {userName} 에는 컴퓨터 사용자 이름이 들어간다.
 
+### MongoDB 단일 리플리카 설정
+
+
+1. 실행 중인 mongod 인스턴스를 정지한다.
+```
+brew services stop mongodb-community
+```
+
+2. replSet 옵션을 주고 mongod 인스턴스를 재시작한다.
+```
+mongod --replSet rs0
+```
+
+3. mongosh로 mongod 인스턴스에 접속한다.
+```
+mongosh
+```
+
+4. 새로운 복제본 세트를 초기화한다.
+```
+rs.initiate()
+```
+
+5. `rs.conf()`로 복제본 세트의 구성을 확인하거나 `rs.status()`로 복제본 세트의 상태를 확인할 수 있다.
+
+[Convert a Standalone to a Replica Set](https://docs.mongodb.com/manual/tutorial/convert-standalone-to-replica-set/)
+
 # > DBeaver 설정 (DBeaver 7.2.0)
 
 ### 키워드 대문자 자동 설정
@@ -194,5 +245,3 @@ DBeaver를 사용하려면 JDK가 필요한데, 최신 버전 설치하는게 �
 ```bash
 brew cask install adoptopenjdk15
 ```
-
-
