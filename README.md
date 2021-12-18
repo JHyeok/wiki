@@ -73,6 +73,7 @@
 - [개발환경에서 간단하게 부하 테스트 하는 방법](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/simple-load-test.md)
 - [Redis를 단위 테스트에서 사용(Mocha, Sinon)](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/mocha-redis.md)
 - [map/forEach 에서 async/await를 병렬로 사용](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/map-concurrency.md)
+- [Mocha 파라미터화 테스트](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/mocha-parameterized-test.md)
 
 ### `React`
 
