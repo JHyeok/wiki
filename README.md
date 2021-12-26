@@ -10,6 +10,73 @@
 
 --- 
 
+### `Node.js`
+
+- [Javascript에서 TimeZone에 따른 시간 출력](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/js-locale-string.md)
+- [Node.js 패키지 관리](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/package-management.md)
+- [gulp.js란?](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/gulpjs.md)
+- [개발환경에서 간단하게 부하 테스트 하는 방법](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/simple-load-test.md)
+- [Redis를 단위 테스트에서 사용(Mocha, Sinon)](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/mocha-redis.md)
+- [map/forEach 에서 async/await를 병렬로 사용](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/map-concurrency.md)
+- [Mocha 파라미터화 테스트](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/mocha-parameterized-test.md)
+
+### `Jenkins`
+
+- [Jenkins와 MSBuild를 이용한 ASP.NET MVC CI/CD](https://github.com/JHyeok/TIL/blob/master/TIL/Jenkins/aspnet-ci-cd.md)
+- [Jenkins와 Slack 알람 통합](https://github.com/JHyeok/TIL/blob/master/TIL/Jenkins/jenkins-with-slack-notifications.md)
+
+### `Python`
+
+- [Python with Visual Studio Code or Jupyter Notebook](https://github.com/JHyeok/TIL/blob/master/TIL/Python/python-getting-started.md)
+- [Python MySQLdb](https://github.com/JHyeok/TIL/blob/master/TIL/Python/python-mysqldb.md)
+- [Visual Studio Code에서 Python Black, Pylint 적용](https://github.com/JHyeok/TIL/blob/master/TIL/Python/python-black-pylint.md)
+- [학습된 H5 모델 파일을 Python에서 사용하기](https://github.com/JHyeok/TIL/blob/master/TIL/Python/python-load-tensorflow-model.md)
+- [Python에서 SQLAlchemy로 Session관리](https://github.com/JHyeok/TIL/blob/master/TIL/Python/python-sqlalchemy-session.md)
+
+### `Flask`
+
+- [Flask에서 global 변수 사용 및 Swagger 결합, 후행슬래시](https://github.com/JHyeok/TIL/blob/master/TIL/Flask/flask-global-swagger-router.md)
+- [Flask에서 TensorFlow 사용](https://github.com/JHyeok/TIL/blob/master/TIL/Flask/flask-tensorflow.md)
+- [Flask에 Sentry 적용하기](https://github.com/JHyeok/TIL/blob/master/TIL/Flask/flask-sentry.md)
+
+### `Git`
+
+- [Git Commit 메시지](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-commit-message.md)
+- [Git 원격 저장소 URL 변경](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-remote-url-edit.md)
+- [Git Commit Log 확인](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-commit-log.md)
+- [Git 작업 중 블루스크린으로 Git 손상 대처 방법](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-bluescreen.md)
+- [Git 원격 저장소의 파일명 대소문자 변경](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-file-change-case.md)
+
+### `AWS`
+
+- [CloudFront가 오래된 객체를 제공하는데 해결 방법](https://github.com/JHyeok/TIL/blob/master/TIL/AWS/cloudfront-s3.md)
+- [CloudFront CORS policy 오리진 오류 해결 방법](https://github.com/JHyeok/TIL/blob/master/TIL/AWS/cloudfront-cors.md)
+- [Node 애플리케이션 AWS Elastic Beanstalk에 배포](https://github.com/JHyeok/TIL/blob/master/TIL/AWS/deploy-node-to-elastic-beanstalk.md)
+
+### `Docker`
+
+- [EC2에서 Docker 설치 및 사용법과 DockerFile 및 Docker-Compose](https://github.com/JHyeok/TIL/blob/master/TIL/Docker/ec2-docker.md)
+- [Docker 멀티 스테이지 빌드](https://github.com/JHyeok/TIL/blob/master/TIL/Docker/docker-multi-stage-build.md)
+
+### `Kafka`
+
+- [카프카 기초](https://github.com/JHyeok/TIL/blob/master/TIL/Kafka/kafka.md)
+
+### `ELK`
+
+- [Elasticsearch와 Kibana](https://github.com/JHyeok/TIL/blob/master/TIL/ELK/elasticsearch-and-kibana.md)
+
+### `Database`
+
+- [클러스터링 인덱스](https://github.com/JHyeok/TIL/blob/master/TIL/Database/clustered-index.md)
+- [Connection Pool](https://github.com/JHyeok/TIL/blob/master/TIL/Database/connection-pool.md)
+- [DataBase별 데이터 선언 차이](https://github.com/JHyeok/TIL/blob/master/TIL/Database/database-varchar.md)
+- [MySQL Slow Query 설정](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-slow-query.md)
+- [MySQL 튜닝](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-mycnf.md)
+- [DBeaver에서 DB Dump 하고 Docker MySQL DB에 Restore](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-dump-restore.md)
+- [SELECT FOR UPDATE](https://github.com/JHyeok/TIL/blob/master/TIL/Database/select-for-update.md)
+- [MongoDB의 lookup vs Mongoose의 populate](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mongodb-lookup-mongoose-populate.md)
+
 ### `ASP.NET Core`
 
 - [ASP.NET Core Identity](https://github.com/JHyeok/TIL/blob/master/TIL/ASP.NET%20Core/Identity.md)
@@ -52,28 +119,13 @@
 - [ASP.NET MVC EF의 콜드쿼리와 미리컴파일](https://github.com/JHyeok/TIL/blob/master/TIL/IIS/aspnetmvc-coldquery-precompile.md)
 - [ASP.NET MVC 및 Windows Service 배포](https://github.com/JHyeok/TIL/blob/master/TIL/IIS/deploy-dotnet-windows-service.md)
 
-### `Kafka`
+### `Java`
 
-- [카프카 기초](https://github.com/JHyeok/TIL/blob/master/TIL/Kafka/kafka.md)
+- [OpenJDK Download](https://github.com/JHyeok/TIL/blob/master/TIL/Java/openjdk.md)
 
-### `ELK`
+### `Design Pattern`
 
-- [Elasticsearch와 Kibana](https://github.com/JHyeok/TIL/blob/master/TIL/ELK/elasticsearch-and-kibana.md)
-
-### `Jenkins`
-
-- [Jenkins와 MSBuild를 이용한 ASP.NET MVC CI/CD](https://github.com/JHyeok/TIL/blob/master/TIL/Jenkins/aspnet-ci-cd.md)
-- [Jenkins와 Slack 알람 통합](https://github.com/JHyeok/TIL/blob/master/TIL/Jenkins/jenkins-with-slack-notifications.md)
-
-### `Node.js`
-
-- [Javascript에서 TimeZone에 따른 시간 출력](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/js-locale-string.md)
-- [Node.js 패키지 관리](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/package-management.md)
-- [gulp.js란?](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/gupljs.md)
-- [개발환경에서 간단하게 부하 테스트 하는 방법](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/simple-load-test.md)
-- [Redis를 단위 테스트에서 사용(Mocha, Sinon)](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/mocha-redis.md)
-- [map/forEach 에서 async/await를 병렬로 사용](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/map-concurrency.md)
-- [Mocha 파라미터화 테스트](https://github.com/JHyeok/TIL/blob/master/TIL/Node.js/mocha-parameterized-test.md)
+- [Facade Pattern 정리](https://github.com/JHyeok/TIL/blob/master/TIL/Design%20Pattern/facade-pattern.md)
 
 ### `React`
 
@@ -89,68 +141,15 @@
 - [Nuxt.js Global CSS 적용](https://github.com/JHyeok/TIL/blob/master/TIL/Vue.js/nuxt-css.md)
 - [Nuxt.js Components에서 props 사용](https://github.com/JHyeok/TIL/blob/master/TIL/Vue.js/nuxt-components-props.md)
 
-### `Python`
-
-- [Python with Visual Studio Code or Jupyter Notebook](https://github.com/JHyeok/TIL/blob/master/TIL/Python/python-getting-started.md)
-- [Python MySQLdb](https://github.com/JHyeok/TIL/blob/master/TIL/Python/python-mysqldb.md)
-- [Visual Studio Code에서 Python Black, Pylint 적용](https://github.com/JHyeok/TIL/blob/master/TIL/Python/python-black-pylint.md)
-- [학습된 H5 모델 파일을 Python에서 사용하기](https://github.com/JHyeok/TIL/blob/master/TIL/Python/python-load-tensorflow-model.md)
-- [Python에서 SQLAlchemy로 Session관리](https://github.com/JHyeok/TIL/blob/master/TIL/Python/python-sqlalchemy-session.md)
-
-### `Flask`
-
-- [Flask에서 global 변수 사용 및 Swagger 결합, 후행슬래시](https://github.com/JHyeok/TIL/blob/master/TIL/Flask/flask-global-swagger-router.md)
-- [Flask에서 TensorFlow 사용](https://github.com/JHyeok/TIL/blob/master/TIL/Flask/flask-tensorflow.md)
-- [Flask에 Sentry 적용하기](https://github.com/JHyeok/TIL/blob/master/TIL/Flask/flask-sentry.md)
-
-### `Design Pattern`
-
-- [Facade Pattern 정리](https://github.com/JHyeok/TIL/blob/master/TIL/Design%20Pattern/facade-pattern.md)
-
-### `Git`
-
-- [Git Commit 메시지](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-commit-message.md)
-- [Git 원격 저장소 URL 변경](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-remote-url-edit.md)
-- [Git Commit Log 확인](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-commit-log.md)
-- [Git 작업 중 블루스크린으로 Git 손상 대처 방법](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-bluescreen.md)
-- [Git 원격 저장소의 파일명 대소문자 변경](https://github.com/JHyeok/TIL/blob/master/TIL/Git/git-file-change-case.md)
-
-### `AWS`
-
-- [CloudFront가 오래된 객체를 제공하는데 해결 방법](https://github.com/JHyeok/TIL/blob/master/TIL/AWS/cloudfront-s3.md)
-- [CloudFront CORS policy 오리진 오류 해결 방법](https://github.com/JHyeok/TIL/blob/master/TIL/AWS/cloudfront-cors.md)
-- [Node 애플리케이션 AWS Elastic Beanstalk에 배포](https://github.com/JHyeok/TIL/blob/master/TIL/AWS/deploy-node-to-elastic-beanstalk.md)
-
-### `Docker`
-
-- [EC2에서 Docker 설치 및 사용법과 DockerFile 및 Docker-Compose](https://github.com/JHyeok/TIL/blob/master/TIL/Docker/ec2-docker.md)
-- [Docker 멀티 스테이지 빌드](https://github.com/JHyeok/TIL/blob/master/TIL/Docker/docker-multi-stage-build.md)
-
-### `Database`
-
-- [클러스터링 인덱스](https://github.com/JHyeok/TIL/blob/master/TIL/Database/clustered-index.md)
-- [Connection Pool](https://github.com/JHyeok/TIL/blob/master/TIL/Database/connection-pool.md)
-- [DataBase별 데이터 선언 차이](https://github.com/JHyeok/TIL/blob/master/TIL/Database/database-varchar.md)
-- [MySQL Slow Query 설정](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-slow-query.md)
-- [MySQL 튜닝](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-mycnf.md)
-- [DBeaver에서 DB Dump 하고 Docker MySQL DB에 Restore](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mysql-dump-restore.md)
-- [SELECT FOR UPDATE](https://github.com/JHyeok/TIL/blob/master/TIL/Database/select-for-update.md)
-- [MongoDB의 lookup vs Mongoose의 populate](https://github.com/JHyeok/TIL/blob/master/TIL/Database/mongodb-lookup-mongoose-populate.md)
-
 ### `HTML`
 
 - [NProgress 로딩바 설정 관련 및 Ajax 전역 이벤트 적용](https://github.com/JHyeok/TIL/blob/master/TIL/HTML/nprogress.md)
 - [Tailwind CSS](https://github.com/JHyeok/TIL/blob/master/TIL/HTML/tailwind-css.md)
 
-### `Java`
-
-- [OpenJDK Download](https://github.com/JHyeok/TIL/blob/master/TIL/Java/openjdk.md)
-
 ### `ETC`
 
 - [Getting Real - 보다 작고, 빠르고, 좋은 소프트웨어 구축을 위한 방법](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/getting-real.md)
 - [올바른 저장 프로시저의 사용법](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/why-use-stored-prodecure.md)
-- [Visual Studio Code 플러그인 Tip](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/vscode-tip.md)
 - [Slack 사용 간단 정리](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/slack-get-started.md)
 - [나의 개발 환경](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/development-environment.md)
 - [CentOS7 자주 사용하는 Command 추가](https://github.com/JHyeok/TIL/blob/master/TIL/ETC/centos-command.md)
