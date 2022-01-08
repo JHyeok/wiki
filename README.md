@@ -1,14 +1,4 @@
-# Today I Learned
- 1. 개발자는 꾸준히 공부해야 한다.
- 2. 공부하면서 배운 점들과 자료들을 기록한다.
- 3. 오류 해결 등 개인적으로 필요하다고 생각되는 것들은 모두 기록해서 검색해서 찾기에 용이하도록 한다.
-
-### 참고한 TIL
- - [thoughtbot님의 TIL](https://github.com/thoughtbot/til)
- - [milooy님의 TIL](https://github.com/milooy/TIL)
- - [Integerous님의 TIL](https://github.com/Integerous/TIL)
-
---- 
+# Wiki
 
 ### `Node.js`
 
