@@ -16,15 +16,15 @@ message를 메모리에 저장하는 시스템과 달리 파일 시스템에 저
 
 ### Kafka 용어 간단 정리
 
-producer : message 생산(발행)자.
-consumer : message 소비자
-consumer group : consumer들끼리 메시지를 나눠서 가져간다. offset을 공유하여 중복으로 가져가지 않는다.
-broker : 카프카 서버를 가리킴
-zookeeper : 카프카 서버(+클러스터) 상태를 관리
-cluster : 브로커들의 묶음
-topic : message 종류
-partitions : topic이 나눠지는 단위
-Log : 1개의 message
+producer : message 생산(발행)자.\
+consumer : message 소비자\
+consumer group : consumer들끼리 메시지를 나눠서 가져간다. offset을 공유하여 중복으로 가져가지 않는다.\
+broker : 카프카 서버를 가리킴\
+zookeeper : 카프카 서버(+클러스터) 상태를 관리\
+cluster : 브로커들의 묶음\
+topic : message 종류\
+partitions : topic이 나눠지는 단위\
+Log : 1개의 message\
 offset : 파티션 내에서 각 message가 가지는 unique id
 
 ### 큰 message를 Kafka로 처리
