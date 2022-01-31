@@ -11,6 +11,7 @@ code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
 ```
+code --install-extension arcticicestudio.nord-visual-studio-code
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension GitHub.copilot
