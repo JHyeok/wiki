@@ -64,9 +64,9 @@ docker-compose --version
 3. 내가 자주 사용하는 docker 명령어들
 
 ```
-# 기존에 존재하는 image를 삭제합니다
---force-rm
-docker build --force-rm -t jaebook-server:0.1 .
+# Dockerfile Image build
+docker build -t jaebook-server:0.1 .
+--no-cache : 캐시 비활성화
 
 # 모든 도커 컨테이너 삭제
 docker stop $(docker ps -a -q)
@@ -106,6 +106,8 @@ docker-compose down -v
 4. [도커에서 bcrypt 설치 오류 발생 해결 방법](https://www.richardkotze.com/top-tips/install-bcrypt-docker-image-exclude-host-node-modules)
 
 5. [자주 쓰는 DockerFile 명령어](https://rampart81.github.io/post/dockerfile_instructions/)
+
+6. 로컬에서 Docker Desktop을 사용하는데 도커를 사용하다가 메모리 부족 오류가 발생하면 Docker Desktop의 `Preferences` - `Resources` - `Advanced` 에서 Memory를 늘려주면 해결이된다.
 
 ---
 #### 참고
