@@ -24,7 +24,8 @@
 - [Facade Pattern 정리](https://github.com/JHyeok/wiki/blob/master/wiki/design-pattern/facade-pattern.md)
 
 ### `Docker`
-- [EC2에서 Docker 설치 및 사용법과 DockerFile 및 Docker-Compose](https://github.com/JHyeok/wiki/blob/master/wiki/docker/ec2-docker.md)
+- [Docker, Docker Compose 정리](https://github.com/JHyeok/wiki/blob/master/wiki/docker/docker-docker-compose.md)
+- [EC2에서 Docker와 Docker Compose 설치](https://github.com/JHyeok/wiki/blob/master/wiki/docker/ec2-docker.md)
 - [Docker 멀티 스테이지 빌드](https://github.com/JHyeok/wiki/blob/master/wiki/docker/docker-multi-stage-build.md)
 
 ### `.NET`
