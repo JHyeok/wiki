@@ -1,6 +1,6 @@
-# EC2에서 Docker 설치 및 사용법과 DockerFile 및 Docker-Compose
+# EC2에서 Docker와 Docker Compose 설치
 
-#### Docker 설치 및 사용
+EC2 리눅스 기준
 
 1. EC2 인스턴스 생성
 
@@ -41,9 +41,7 @@ sudo usermod -aG docker ec2-user
 docker version
 ```
 
-#### DockerFile, docker-compose.yml 작성
-
-1. Git 설치하고 프로젝트 저장소를 클론
+7. Git 설치하고 프로젝트 저장소를 클론
 
 ```
 sudo yum install -y git
@@ -51,7 +49,7 @@ sudo yum install -y git
 git clone [repo 주소]
 ```
 
-2. docker-compose 설치
+8. Docker Compose 설치
 
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -61,57 +59,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
 
-3. 내가 자주 사용하는 docker 명령어들
-
-```
-# Dockerfile Image build
-docker build -t jaebook-server:0.1 .
---no-cache : 캐시 비활성화
-
-# 모든 도커 컨테이너 삭제
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
-
-# 모든 도커 이미지 삭제
-docker rmi $(docker images -q)
-
-# 사용하지 않는 도커 볼륨 삭제
-docker volume prune
-```
-
-볼륨을 제거하려면 컨테이너가 제거되어 있어야 한다.
-
-Docker를 사용하다 보면 `<none>:<none>`의 이미지들이 쌓이기 시작한다. 이러한 이미지들을 정리하려면 아래의 명령어를 입력하면 된다.
-
-```
-docker rmi $(docker images -f "dangling=true" -q)
-```
-
-3. 내가 자주 사용하는 docker-compose 명령어들
-
-```
-# 알아서 컨테이너를 재생성하고 재시작해준다 (docker-compose 파일 수정되었을 때 사용)
-docker-compose up -d 
-
-# --build 옵션을 넣으면 알아서 이미지를 새로 만들고 서비스를 재시작 (Dockerfile 수정되었을 때 사용)
-docker-compose up -d --build
-
-# 로그 확인
-docker-compose logs
-
-# docker-compose로 설치한 volume 삭제
-docker-compose down -v
-```
-
-4. [도커에서 bcrypt 설치 오류 발생 해결 방법](https://www.richardkotze.com/top-tips/install-bcrypt-docker-image-exclude-host-node-modules)
-
-5. [자주 쓰는 DockerFile 명령어](https://rampart81.github.io/post/dockerfile_instructions/)
-
-6. 로컬에서 Docker Desktop을 사용하는데 도커를 사용하다가 메모리 부족 오류가 발생하면 Docker Desktop의 `Preferences` - `Resources` - `Advanced` 에서 Memory를 늘려주면 해결이된다.
-
 ---
 #### 참고
-
-https://tech.osci.kr/2020/03/03/91690190/
 
 https://www.44bits.io/ko/post/almost-perfect-development-environment-with-docker-and-docker-compose
