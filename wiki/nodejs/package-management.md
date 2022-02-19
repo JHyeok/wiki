@@ -26,22 +26,32 @@ npm 버전들을 관리할 수 있다.
 
 즉, `npm update`를 실행하면 설치되는 버전이다. "Latest"는 모듈의 최신 버전이다. 위 화면에서는 "Wanted"와 "Latest"가 같은 모듈이 빨간색으로 표시되었고 "Latest"가 "Wanted"보다 높은 모듈은 구별할 수 있게 노란색으로 표시되었다.
 
-## NPM으로 Major 버전 업데이트
-
-기존의 `npm update` 명령어로는 `^`에 표기된 Minor 버전들까지로만 업데이트 된다.
+## npm-check-updates를 활용하기
 
 ```sh
+# 설치
 npm install -g npm-check-updates
+# minor 버전까지만 package.json 업데이트
+ncu -u --target minor
 ```
+
+package.json이 최신화되었으니 이 정보를 바탕으로 `npm install` 하거나 package-lock.json, node_modules을 지우고 `npm install` 하거나 그 이후는 원하는 대로 사용할 수 있다.
+
+기존의 `npm update` 명령어로는 `^`에 표기된 Minor 버전들까지로만 업데이트한다.
 
 ```sh
 ncu -u
 ```
 
-`npm-check-updates`를 사용해서 Major 버전들도 모두 업데이트 된다.
+`npm-check-updates`를 사용해서 Major 버전들도 모두 업데이트할 수 있다. package.json이 최신화되었으니 `npm install`로 다시 설치하면 된다.
 
 ```sh
 npm install
+```
+
+```sh
+# 특정 패키지만 업데이트
+ncu eslint
 ```
 
 ## Yarn으로 패키지 관리
