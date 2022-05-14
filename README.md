@@ -121,3 +121,6 @@
 - [Nuxt.js에서 express와 sequelize](https://github.com/JHyeok/wiki/blob/master/wiki/vuejs/nuxt-express-sequelize.md)
 - [Nuxt.js Global CSS 적용](https://github.com/JHyeok/wiki/blob/master/wiki/vuejs/nuxt-css.md)
 - [Nuxt.js Components에서 props 사용](https://github.com/JHyeok/wiki/blob/master/wiki/vuejs/nuxt-components-props.md)
+
+### `TypeScript`
+- [TypeScript Nullish Coalescing](https://github.com/JHyeok/wiki/blob/master/wiki/typescript/typescript-nullish-coalescing.md)
