@@ -11,16 +11,19 @@ code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
 ```
-code --install-extension arcticicestudio.nord-visual-studio-code
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension GitHub.copilot
 code --install-extension golang.go
+code --install-extension hbenl.vscode-mocha-test-adapter
+code --install-extension hbenl.vscode-test-explorer
+code --install-extension kavod-io.vscode-jest-test-adapter
 code --install-extension mhutchie.git-graph
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension MS-CEINTL.vscode-language-pack-ko
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
+code --install-extension ms-vscode.test-adapter-converter
 code --install-extension octref.vetur
 code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension tht13.python
