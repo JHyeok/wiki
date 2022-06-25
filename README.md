@@ -58,10 +58,10 @@
 - [올바른 저장 프로시저의 사용법](https://github.com/JHyeok/wiki/blob/master/wiki/etc/why-use-stored-prodecure.md)
 - [Slack 사용 간단 정리](https://github.com/JHyeok/wiki/blob/master/wiki/etc/slack-get-started.md)
 - [나의 개발 환경](https://github.com/JHyeok/wiki/blob/master/wiki/etc/development-environment.md)
-- [CentOS7 자주 사용하는 Command 추가](https://github.com/JHyeok/wiki/blob/master/wiki/etc/centos-command.md)
 - [gRPC](https://github.com/JHyeok/wiki/blob/master/wiki/etc/grpc.md)
 - [nGrinder 환경 AWS에서 구성](https://github.com/JHyeok/wiki/blob/master/wiki/etc/ngrinder-aws.md)
-- [리눅스 권한 조정](https://github.com/JHyeok/wiki/blob/master/wiki/etc/linux-chmod.md)
+- [Linux 자주 사용하는 명령어](https://github.com/JHyeok/wiki/blob/master/wiki/etc/linux-command.md)
+- [Linux 권한 설정](https://github.com/JHyeok/wiki/blob/master/wiki/etc/linux-chmod.md)
 - [간단하게 병렬로 API 요청 보내는 방법](https://github.com/JHyeok/wiki/blob/master/wiki/etc/postman-curl-test.md)
 
 ### `Flask`
