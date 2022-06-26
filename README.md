@@ -54,7 +54,6 @@
 - [Elasticsearch와 Kibana](https://github.com/JHyeok/wiki/blob/master/wiki/elk/elasticsearch-and-kibana.md)
 
 ### `ETC`
-- [Getting Real - 보다 작고, 빠르고, 좋은 소프트웨어 구축을 위한 방법](https://github.com/JHyeok/wiki/blob/master/wiki/etc/getting-real.md)
 - [올바른 저장 프로시저의 사용법](https://github.com/JHyeok/wiki/blob/master/wiki/etc/why-use-stored-prodecure.md)
 - [Slack 사용 간단 정리](https://github.com/JHyeok/wiki/blob/master/wiki/etc/slack-get-started.md)
 - [나의 개발 환경](https://github.com/JHyeok/wiki/blob/master/wiki/etc/development-environment.md)
