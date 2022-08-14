@@ -33,7 +33,9 @@ code --install-extension tht13.python
 
 `settings.json`
 
-```
+#### Windows
+
+```json
 {
   "files.watcherExclude": {
     "**/node_modules": true,
@@ -63,6 +65,40 @@ code --install-extension tht13.python
 ```
 
 > Windows 환경에서 `Ctrl + Shift + P` 단축키로 `settings.json` 수정 가능하다.
+
+#### Mac
+
+```json
+{
+  "terminal.integrated.fontFamily": "D2Coding",
+  "files.watcherExclude": {
+    "**/node_modules": true,
+    "**/platforms": true,
+    "**/plugins": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "explorer.confirmDelete": false,
+  "editor.tabSize": 2,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.fontSize": 16,
+  "[markdown]": {
+    "editor.rulers": [50, 72],
+    "editor.fontFamily": "NanumGothicCoding"
+  },
+  "[git-commit]": {
+    "editor.rulers": [50, 72],
+    "editor.fontFamily": "NanumGothicCoding"
+  }
+}
+```
 
 # > 맥린이 맥북 적응하기
 
