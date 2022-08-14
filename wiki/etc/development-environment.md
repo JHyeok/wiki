@@ -243,6 +243,7 @@ services:
 
 ### MongoDB 단일 리플리카 설정
 
+[Convert a Standalone to a Replica Set](https://docs.mongodb.com/manual/tutorial/convert-standalone-to-replica-set/)
 
 1. 실행 중인 mongod 인스턴스를 정지한다.
 ```
@@ -266,7 +267,8 @@ rs.initiate()
 
 5. `rs.conf()`로 복제본 세트의 구성을 확인하거나 `rs.status()`로 복제본 세트의 상태를 확인할 수 있다.
 
-[Convert a Standalone to a Replica Set](https://docs.mongodb.com/manual/tutorial/convert-standalone-to-replica-set/)
+[Creating a mongo image set with --replSet ](https://github.com/docker-library/mongo/issues/246)
+[MongoDB Single Node Replica Set For Dev Environment](https://github.com/MaBeuLux88/docker/tree/master/mongo-single-node-rs)
 
 # > DBeaver 설정 (DBeaver 7.2.0)
 
