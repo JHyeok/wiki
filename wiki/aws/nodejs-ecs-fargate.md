@@ -22,7 +22,7 @@ v0.25 CPU, v0.5 CPU, v1 CPU에서 동일하게 결과값이 나왔다.
 
 [Docker containers and Node.js clusters](https://stackoverflow.com/questions/28547993/docker-containers-and-node-js-clusters)
 
-[https://stackoverflow.com/questions/43213250/nodejs-cluster-on-aws-lambda](https://stackoverflow.com/questions/43213250/nodejs-cluster-on-aws-lambda)
+[NodeJS Cluster on AWS Lambda](https://stackoverflow.com/questions/43213250/nodejs-cluster-on-aws-lambda)
 
 하지만 예측하지 말고 직접 테스트하기로 했다.
 
@@ -35,3 +35,6 @@ v1CPU/2GB Memory의 ECS Fargate 환경에서는 Node.js 클러스터를 사용�
 여러 개의 vCPU를 사용하거나 ECS EC2를 사용한다면 다른 결과값이 나올 수 있다.
 
 **예측하는 것보다 직접 테스트하고 측정하는 것이 가장 정확한 것 같다.**
+
+추가로 읽으면 도움되는 글
+- [Scaling Node.js microservices on AWS to handle 5M requests per minute](https://sirinsoftware.com/blog/technology/scaling-node-js-microservices-on-aws-to-handle-5m-requests-per-minute/)
