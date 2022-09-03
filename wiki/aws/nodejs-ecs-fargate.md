@@ -1,4 +1,4 @@
-#### Node.js Cluster와 Amazon ECS
+# Node.js Cluster와 Amazon ECS
 
 팀에서 AWS BatchLambda를 사용한 적이 있다. 
 
