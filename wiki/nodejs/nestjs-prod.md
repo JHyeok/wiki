@@ -14,6 +14,12 @@ CMD [ "nest", "start" ]
 
 ![nestjs-prod-memory](./image/nestjs-prod-memory.png)
 
+```sh
+ps ef | grep 'node'
+top -l 1 | grep "6954" | awk '{print "CPU="$3 "\tMEM="$8}'
+top -l 1 | grep "6943" | awk '{print "CPU="$3 "\tMEM="$8}'
+```
+
 PID가 6954는 `node` 명령어로 직접 컴파일 한 결과물을 실행한 것인데 메모리를 77MB만 차지하고 있다. 그 아래에 `nest start`로 실행한 것은 849MB를 차지하고 있다.
 
 `nest start`가 메모리를 많이 차지한다.
