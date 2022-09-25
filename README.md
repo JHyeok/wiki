@@ -65,6 +65,7 @@
 - [Linux 자주 사용하는 명령어](https://github.com/JHyeok/wiki/blob/master/wiki/etc/linux-command.md)
 - [Linux 권한 설정](https://github.com/JHyeok/wiki/blob/master/wiki/etc/linux-chmod.md)
 - [간단하게 병렬로 API 요청 보내는 방법](https://github.com/JHyeok/wiki/blob/master/wiki/etc/postman-curl-test.md)
+- [k6과 loadtest 비교](https://github.com/JHyeok/wiki/blob/master/wiki/etc/k6-vs-loadtest.md)
 
 ### `React`
 - [React에서 State와 Props](https://github.com/JHyeok/wiki/blob/master/wiki/react/state-and-props.md)
