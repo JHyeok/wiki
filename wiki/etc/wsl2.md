@@ -34,10 +34,11 @@ git config --global core.filemode false
 git config --global core.autocrlf true
 ```
 - `git config --global core.filemode false`와 `git config --global core.autocrlf true`를 사용해서 해결했다.
-- global 옵션은 선택이다.
+- global 옵션은 개인의 선택이다. 해당 명령어를 사용하지 않고 Linux 환경에서 작업하는 것과 같도록(LF를 사용) 변경사항을 전부 커밋해서 해결해도 된다.
 3. VSCode의 Extension들도 WSL2 환경으로 다시 설치해야 한다.
 4. git 설정도 다시 해야 한다.
 ```sh
 git config --global user.name "JaeHyeok Kim"
 git config --global user.email "dev.jhyeok@gmail.com"
 ```
+5. 개인적으로 사용하면서 느낀 건데 VSCode에서 소스 제어 환경이 코드를 수정하면 바로 반영되지 않고 새로고침 버튼을 눌러야 변경사항이 적용되는 것 같다.
