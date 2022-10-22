@@ -41,4 +41,8 @@ git config --global core.autocrlf true
 git config --global user.name "JaeHyeok Kim"
 git config --global user.email "dev.jhyeok@gmail.com"
 ```
-5. 개인적으로 사용하면서 느낀 건데 VSCode에서 소스 제어 환경이 코드를 수정하면 바로 반영되지 않고 새로고침 버튼을 눌러야 변경사항이 적용되는 것 같다.
+5. VSCode에서 소스 제어 환경이 코드를 수정하면 바로 반영되지 않고 새로고침 버튼을 눌러야 변경사항이 적용되는 것 같다.
+- 이 문제는 윈도우 디렉토리에 있는 파일들을 WSL2 환경에서 접근해서 VSCode로 작업을 했기 때문이다.
+- WSL2의 디렉토리에서 git clone을 받거나 윈도우의 파일을 복사해서 작업을 하면 바로 반영된다.
+- WSL2에서 `explorer.exe .` 명령어를 사용하면 윈도우에서 볼 수 있다. 파일 옮길 때 숨김 항목도 보이게 해서 `.git` 파일도 같이 옮기는 것이 편하다.
+- VSCode가 느리다는 느낌도 사라졌다.
