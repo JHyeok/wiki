@@ -46,3 +46,6 @@ git config --global user.email "dev.jhyeok@gmail.com"
 - WSL2의 디렉토리에서 git clone을 받거나 윈도우의 파일을 복사해서 작업을 하면 바로 반영된다.
 - WSL2에서 `explorer.exe .` 명령어를 사용하면 윈도우에서 볼 수 있다. 파일 옮길 때 숨김 항목도 보이게 해서 `.git` 파일도 같이 옮기는 것이 편하다.
 - VSCode가 느리다는 느낌도 사라졌다.
+
+#### Windows Terminal에서 WSL2(Ubuntu 22.04)
+![wsl2-terminal](./image/wsl2-terminal.png)
