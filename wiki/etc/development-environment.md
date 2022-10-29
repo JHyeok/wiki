@@ -11,6 +11,7 @@ code --list-extensions | xargs -L 1 echo code --install-extension
 ```
 
 ```
+code --install-extension charasyn.chc-dark-color-theme
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension golang.go
@@ -65,12 +66,23 @@ code --install-extension shd101wyy.markdown-preview-enhanced
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[go]": {
     "editor.defaultFormatter": "golang.go",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "editor.renderWhitespace": "boundary",
+  "editor.inlineSuggest.enabled": true,
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "workbench.colorTheme": "CHC Dark"
 }
 ```
 
@@ -121,7 +133,6 @@ nvm install v12
 ```
 
 - 참고 : https://gist.github.com/falsy/8aa42ae311a9adb50e2ca7d8702c9af1
-
 
 ### zsh에서 Node 명령어 오류가 발생할 때
 
@@ -190,7 +201,7 @@ services: # 이 항목 밑에 실행하려는 컨테이너 들을 정의
     ports:
       - "3306:3306" # 접근 포트 설정 (컨테이너 외부:컨테이너 내부)
     environment: # -e 옵션
-      MYSQL_ROOT_PASSWORD: "root1234"  # MYSQL 패스워드 설정 옵션
+      MYSQL_ROOT_PASSWORD: "root1234" # MYSQL 패스워드 설정 옵션
     command: # 명령어 실행
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
@@ -245,7 +256,6 @@ services:
     ports:
       - "27017:27017"
     restart: always
-
 # connect URL : mongodb://root:password@localhost:27017
 ```
 
@@ -256,21 +266,25 @@ services:
 [Convert a Standalone to a Replica Set](https://docs.mongodb.com/manual/tutorial/convert-standalone-to-replica-set/)
 
 1. 실행 중인 mongod 인스턴스를 정지한다.
+
 ```
 brew services stop mongodb-community
 ```
 
 2. replSet 옵션을 주고 mongod 인스턴스를 재시작한다.
+
 ```
 mongod --replSet rs0
 ```
 
 3. mongosh로 mongod 인스턴스에 접속한다.
+
 ```
 mongosh
 ```
 
 4. 새로운 복제본 세트를 초기화한다.
+
 ```
 rs.initiate()
 ```
@@ -291,6 +305,8 @@ rs.initiate()
 `Window > Preferences > Database > Connection Types`에서 여러 가지 설정이 가능하다.
 좌측 내비게이터에서 연결된 DB를 오른쪽 클릭하고 `Edit Connection > General`에 들어가면 `Connection type`을 변경 가능하며, 옆에 `Edit connection types`에서 커스텀이 가능하다.
 
+`cd ~/LibraryDBeaverData/workspace6/General`을 옮겨서 DBeaver에서 데이터베이스 연결 정보와 작성한 SQL 스크립트들을 다른 컴퓨터로 옮길 수 있다.
+
 ### 기타
 
 DBeaver를 사용하려면 JDK가 필요한데, 최신 버전 설치하는게 좋아보인다.
@@ -298,5 +314,10 @@ DBeaver를 사용하려면 JDK가 필요한데, 최신 버전 설치하는게 �
 맥 OS 업데이트 이후에 기존에 사용하던 DBeaver가 열리지 않았는데, DBeaver GitHub Issuse에서는 JDK를 최신 버전으로 업데이트 하면 된다고 해서 업데이트하니 정상적으로 열렸다.
 
 ```bash
-brew cask install adoptopenjdk15
+# adoptopenjdk15가 설치가 되지 않을 때
+brew tap AdoptOpenJDK/openjdk
+
+
+brew install --cask adoptopenjdk15
+java -version
 ```
