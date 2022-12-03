@@ -1,4 +1,12 @@
-# DBeaver에서 DB Dump 하고 Docker MySQL DB에 Restore
+# DB Dump
+
+```bash
+docker exec mysql /usr/bin/mysqldump -u root -p'password' -h <ip address> <db name> 1> dump.sql
+```
+
+DBeaver에서 Dump를 할 때 선택하는 client에는 로컬에 설치된 MySQL에만 접근이 가능해서 Dokcer에 설치된 clinet에 접근이 힘들 때 그냥 터미널에서 위의 방법으로 하면 된다.
+
+#### DBeaver에서 DB Dump
 
 DBeaver에서 Dump를 하려면 Dump 하려는 데이터베이스를 오른쪽 클릭을 해서 `tool > dump database`를 하면 된다.
 
@@ -7,6 +15,8 @@ client 선택은 `/usr/local/opt/mysql@5.7/5.7.31/bin` 로 하면 된다. client
 Dump 도중에 오류가 발생하여도 중간에 오류가 발생한 지점에서 멈추어서 `.sql` 파일이 생성되어 파일 크기가 무척 작은데 그런 파일들은 삭제하고 다시 Dump 시도하면 된다. 처음에는 MySQL 버전이 달라서 오류가 발생하였고, 그 다음번에는 Security 설정의 Authentication에서 아이디와 비밀번호가 잘못되어서 오류가 발생한 적이 있다.
 
 Docker에서 MySQL을 설치하였기 때문에 Homebrew에서 `brew install mysql@5.7`을 해서 설치하고 위의 드라이버만 선택해서 DBeaver의 clinet로 사용했다.
+
+# Docker MySQL에서 DB Restore
 
 ```bash
 cat dump.sql | docker exec -i container_name /usr/bin/mysql -u root —password=root db_name
@@ -28,6 +38,7 @@ cat dump.sql | docker exec -i mysql /usr/bin/mysql -u root -p"rootpassword" db_n
 위의 명령어로 하면 Restore 된다.
 
 ---
+
 #### 참고
 
 https://dev.to/bhaidar/how-to-dump-a-database-using-dbeaver-56ga
