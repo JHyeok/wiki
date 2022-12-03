@@ -261,6 +261,44 @@ services:
 
 > {userName} 에는 컴퓨터 사용자 이름이 들어간다.
 
+### Docker Compose - MongoDB Standalone to a Replica Set
+
+```yml
+version: "3.4"
+services:
+  mongodb:
+    image: arm64v8/mongo:latest
+    container_name: mongodb
+    hostname: mongodb
+    volumes:
+      - ./.docker/mongodb/mongod.conf:/etc/mongod.conf
+      - ./.docker/mongodb/mongodb.key:/etc/mongodb.key
+      - ./.docker/mongodb/initdb.d/:/docker-entrypoint-initdb.d/
+      - ./.docker/mongodb/data/db/:/data/db/
+      - ./.docker/mongodb/data/log/:/var/log/mongodb/
+    env_file:
+      - .env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+      MONGO_REPLICA_SET_NAME: ${MONGO_REPLICA_SET_NAME}
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo -u $${MONGO_INITDB_ROOT_USERNAME} -p $${MONGO_INITDB_ROOT_PASSWORD} --quiet) -eq 1
+      interval: 10s
+      start_period: 30s
+    command:
+      [
+        "-f",
+        "/etc/mongod.conf",
+        "--replSet",
+        "${MONGO_REPLICA_SET_NAME}",
+        "--bind_ip_all",
+      ]
+```
+
 ### MongoDB 단일 리플리카 설정
 
 [Convert a Standalone to a Replica Set](https://docs.mongodb.com/manual/tutorial/convert-standalone-to-replica-set/)
