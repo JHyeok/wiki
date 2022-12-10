@@ -205,6 +205,7 @@ services: # 이 항목 밑에 실행하려는 컨테이너 들을 정의
     command: # 명령어 실행
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
+      - --sql-mode=STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION
     volumes:
       - /Users/{userName}/datadir:/var/lib/mysql # -v 옵션 (다렉토리 마운트 설정)
     restart: always
