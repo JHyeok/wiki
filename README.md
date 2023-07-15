@@ -33,6 +33,7 @@
 
 - [TypeScript Nullish Coalescing](https://github.com/JHyeok/wiki/blob/master/wiki/typescript/typescript-nullish-coalescing.md)
 - [Typescript의 함수 표현식과 화살표 함수에서 Function으로 타입 선언해서 사용하지 않기](https://github.com/JHyeok/wiki/blob/master/wiki/typescript/function-interface.md)
+- [esModuleInterop](https://github.com/JHyeok/wiki/blob/master/wiki/typescript/tsconfig-esmoduleInterop.md)
 
 ### `Database`
 
