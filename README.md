@@ -67,6 +67,7 @@
 - [Git Commit Log 확인](https://github.com/JHyeok/wiki/blob/master/wiki/git/git-commit-log.md)
 - [Git 작업 중 블루스크린으로 Git 손상 대처 방법](https://github.com/JHyeok/wiki/blob/master/wiki/git/git-bluescreen.md)
 - [Git 원격 저장소의 파일명 대소문자 변경](https://github.com/JHyeok/wiki/blob/master/wiki/git/git-file-change-case.md)
+- [Git 원격 저장소에서 특정 파일, 커밋, 히스토리 제거하기](https://github.com/JHyeok/wiki/blob/master/wiki/git/git-delete-file.md)
 
 ### `ETC`
 
